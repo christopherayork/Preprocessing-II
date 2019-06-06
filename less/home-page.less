@@ -1,5 +1,11 @@
 .home {
 
+  @media @tablet {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   @media @phone {
     display: flex;
     flex-direction: column;
@@ -12,6 +18,10 @@
     flex-direction: column;
     border-bottom: 2px dashed @navigation-border;
     padding-bottom: 1%;
+
+    @media @tablet {
+      width: 90%;
+    }
 
     @media @phone {
       flex-direction: column;
@@ -43,6 +53,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @tablet {
+      width: 90%;
+    }
 
     @media @phone {
       flex-direction: column;
@@ -100,17 +114,14 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @tablet {
+      width: 90%;
+    }
+
     @media @phone {
       width: 90%;
       margin: 0 auto 50px;
     }
-
-    //h2 {
-    //
-    //  @media @phone {
-    //    padding-bottom: 0;
-    //  }
-    //}
 
     img {
       border-radius: 10px;
@@ -122,6 +133,10 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+
+    @media @tablet {
+      width: 90%;
+    }
 
     @media @phone {
       flex-direction: column;
@@ -148,6 +163,32 @@
           width: 100%;
         }
 
+      }
+    }
+
+    #booking {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      align-items: center;
+      margin-bottom: 10px;
+
+      input, textarea, select, button {
+        margin: 5px 0;
+        border-radius: 5px;
+      }
+
+      input, textarea {
+        width: 60%;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      button {
+        padding: 10px;
+        width: 30%;
       }
     }
   }
