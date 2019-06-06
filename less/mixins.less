@@ -1,1 +1,38 @@
 // Mixins in here
+
+.btn-fix(@bgc, @width, @padding, @margin, @radius) {
+  background: @bgc;
+  width: @width;
+  padding: @padding;
+  margin: @margin;
+  border-radius: @radius;
+  text-align: center;
+  color: @white;
+  font-size: 1.8rem;
+
+}
+
+
+
+.animation-mixin(@name; @duration: 1s; @delay: 0s; @iterations: 1; @dir: normal; @timing: linear; @fill: none) {
+  animation-name:             @name;
+  animation-duration:         @duration;
+  animation-delay:            @delay;
+  animation-iteration-count:  @iterations;
+  animation-direction:        @dir;
+  animation-timing-function:  @timing;
+  animation-fill-mode:        @fill;
+}
+
+@keyframes rainbow {
+  10%   { color: red;             }
+  20%   { color: orangered;       }
+  30%   { color: orange;          }
+  40%   { color: yellow;          }
+  50%   { color: green;           }
+  60%   { color: teal;            }
+  70%   { color: blue;            }
+  80%   { color: darkslateblue;   }
+  90%   { color: purple;          }
+  100%  { color: mediumvioletred; }
+}
