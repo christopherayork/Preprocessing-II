@@ -16,9 +16,32 @@
 
 <body>
 
-  
+  <header>
+      <nav class="container">
+          <div class="nav-content first">
+            <a href="#"><h2>Fun Bus</h2></a>
+          </div>
+          <div class="nav-content second">
+              <a href="#">Home</a>
+              <a href="#">About Us</a>
+              <a href="#">Blog</a>
+              <a href="#">Contact</a>
+          </div>
+      </nav>
+  </header>
      
   <div class="container home">
+
+    <section class="content-section-column">
+      <div class="img-content">
+          <img src="img/fun-bus.jpg" alt="Little Bus on The Beach" />
+      </div>
+      <div class="text-content">
+        <h2>Welcome To Fun Bus!</h2>
+        <p>Traveling expedition modern, clean webpage blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
+      </div>
+
+    </section>
    
     <section class="content-section">
       <div class="text-content">
@@ -64,6 +87,25 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+
+    <section class="content-pick">
+      <form id="booking">
+          <select>
+              <option>Fun In The Sun</option>
+            <option>Mountain Excursion</option>
+            <option>Island Getaway</option>
+        </select>
+        <input name="name" type="text" value="First and Last Name" />
+        <input name="email" type="text" value="Email" />
+        <input name="phone" type="text" value="Phone Number" />
+
+        <textarea name="instructions">
+          Any special requests? Leave them here.
+        </textarea>
+        <button type="button">Book It!</button>
+      </form>
+    </section>
+
   </div><!-- container -->
 
   <footer class="footer">
